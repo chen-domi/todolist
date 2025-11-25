@@ -3,21 +3,24 @@
 
 <head>
   <meta charset="UTF-8" />
-  <script src="https://cdn.tailwindcss.com"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="/src/style.css" rel="stylesheet">
   <title>To Do List</title>
 </head>
 
+<!-- Add Tasks --> 
+<!-- View Tasks List -->
+<!-- Delete Tasks -->
+
 <body>
-  <div class="grid place-content-center text-center border-8">
+  <div class="grid place-content-center text-center">
     <h1 class="text-5xl font-bold mb-4 mt-4">To-Do List</h1>
     <div class="flex">
-      <input type="text" id="input-el" class="border-2 rounded pt-2 pb-2 px-20" />
-      <button id="add-el" class="bg-red-400 rounded pt-2 pb-2 px-20">ADD</button>
+      <input id="input-el" type="text" class="border-2 rounded pt-2 pb-2 pr-10 pl-2 mr-4"/>
+      <button id="add-el" onclick="addTask()" class="bg-red-400 rounded pt-2 pb-2 px-20">ADD</button>
     </div>
-    <ul class="text-left" id="ul-el">
-      <li><input type="checkbox" id="task-el" class="mt-3 mb-3"/></li>
+    <ul id="list-el" class="text-left" >
+      <li><input id="task-el" class="mt-3 mb-3"/></li>
     </ul>
   </div>
 
